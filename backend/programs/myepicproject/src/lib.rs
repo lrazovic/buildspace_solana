@@ -4,6 +4,8 @@ declare_id!("GufU7hPTNH4ZGVH3wNfDpoYq3vJ8yLgq3kw16om5xoUd");
 
 #[program]
 pub mod myepicproject {
+    use anchor_lang::solana_program::entrypoint::ProgramResult;
+
     use super::*;
 
     pub fn start_stuff_off(ctx: Context<StartStuffOff>) -> ProgramResult {
